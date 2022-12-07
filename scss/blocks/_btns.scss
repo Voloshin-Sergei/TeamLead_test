@@ -1,0 +1,17 @@
+@import '../mixins';
+@import '../variables';
+
+.btn-order {
+  @include text($text_light, 400, 2rem);
+
+  padding: 0.8rem 4rem;
+  text-align: center;
+  background-color: $info;
+  border-radius: 0.2rem;
+  box-shadow: 0 1.3rem 5rem rgb(192 192 192 / 20%);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($info, 10%);
+  }
+}
